@@ -3,9 +3,15 @@
     src: url(fonts/Norse-Bold.otf);
 }
 
+@font-face {
+    font-family: NotoSans;
+    src: url(fonts/NotoSans-VariableFont_wdth\,wght.ttf);
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: NotoSans;
 }
 
 a {
@@ -20,10 +26,11 @@ a {
 .sidebar {
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
     background-image: url("images/zetong-li-4qQolDX6eSw-unsplash.jpg");
-    background-size: 40vw;
+    background-size: 500px;
     background-repeat: no-repeat;
-    width: 35vw;
+    width: 500px;
     background-position: left;
     align-items: center;
 }
@@ -42,6 +49,27 @@ a {
 
 .footer {
     color: white;
+    font-size: 12px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(241, 241, 241);
+}
+
+.content > div {
+    padding: 0 60px;
+}
+
+.hero {
+    margin: 100px 0 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.signup {
+    background-color: white;
 }
 
 input {
