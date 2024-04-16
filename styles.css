@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(fonts/Norse-Bold.otf);
+}
 
 body {
     margin: 0;
@@ -14,11 +18,26 @@ a {
 }
 
 .sidebar {
+    display: flex;
+    flex-direction: column;
     background-image: url("images/zetong-li-4qQolDX6eSw-unsplash.jpg");
     background-size: 40vw;
     background-repeat: no-repeat;
     width: 35vw;
     background-position: left;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px;
+    margin: 160px 0px auto;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: inherit;
+    font-family: Norse-Bold, sans-serif;
+    font-size: 100px;
 }
 
 .footer {
