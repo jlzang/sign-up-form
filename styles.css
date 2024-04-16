@@ -1,0 +1,30 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    all: unset;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-image: url("images/zetong-li-4qQolDX6eSw-unsplash.jpg");
+    background-size: 40vw;
+    background-repeat: no-repeat;
+    width: 35vw;
+    background-position: left;
+}
+
+.footer {
+    color: white;
+}
+
+input {
+    appearance: none;
+}
