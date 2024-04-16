@@ -12,10 +12,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: NotoSans;
+    font-size: 16px;
 }
 
 a {
-    all: unset;
+    color: white;
 }
 
 .container {
@@ -28,9 +29,9 @@ a {
     flex-direction: column;
     flex-shrink: 0;
     background-image: url("images/zetong-li-4qQolDX6eSw-unsplash.jpg");
-    background-size: 500px;
+    background-size: 550px;
     background-repeat: no-repeat;
-    width: 500px;
+    width: 550px;
     background-position: left;
     align-items: center;
 }
@@ -45,6 +46,7 @@ a {
     width: inherit;
     font-family: Norse-Bold, sans-serif;
     font-size: 100px;
+    gap: 10px;
 }
 
 .footer {
@@ -58,20 +60,100 @@ a {
     background-color: rgb(241, 241, 241);
 }
 
-.content > div {
-    padding: 0 60px;
+.hero,
+.login {
+    padding-left: 60px;
 }
 
+
 .hero {
-    margin: 100px 0 0;
-    font-size: 20px;
+    margin: 100px 0 20px;
+    font-size: 24px;
     font-weight: 500;
+    width: 700px;
 }
 
 .signup {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 70px;
+    border: none;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-block-end: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    min-inline-size: min-content;
     background-color: white;
+    padding: 60px 0 40px 60px;
+    position: relative;
+    box-shadow: 2px 2px 5px rgb(201, 201, 201);
+}
+
+legend {
+    font-size: 24px;
+    font-weight: 500;
+    padding-inline-start: 0;
+    padding: 15px 0;
+    position: absolute;
+    top: 0;
+}
+
+label {
+    font-size: 14px;
+    color: rgb(74, 74, 74);
 }
 
 input {
     appearance: none;
+    box-sizing: border-box;
+    width: 250px;
+    border-color: rgb(208, 208, 208);
+    border-style: solid;
+}
+
+input:focus {
+    outline-style: none;
+    border-color: rgb(249, 137, 204);
+    box-shadow: 2px 2px 5px rgb(201, 201, 201);
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+button[type="submit"] {
+    appearance: none;
+    font-family: NotoSans;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 30px 60px;
+    padding: 10px 30px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(249, 137, 204);
+    box-shadow: 2px 2px 5px rgb(201, 201, 201);
+}
+
+.login > button {
+    border: none;
+    font-family: NotoSans;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    color: rgb(246, 110, 192);
 }
