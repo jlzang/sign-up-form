@@ -120,8 +120,11 @@ input {
     appearance: none;
     box-sizing: border-box;
     width: 250px;
+    height: 30px;
     border-color: rgb(208, 208, 208);
     border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
 }
 
 input:focus {
@@ -133,6 +136,18 @@ input:focus {
 .form-row {
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+.confirm {
+    padding: 0 0 15px;
+}
+
+.passcheck {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
 }
 
 button[type="submit"] {
@@ -156,4 +171,8 @@ button[type="submit"] {
     margin: 0;
     padding: 0;
     color: rgb(246, 110, 192);
+}
+
+/*input[type="password"]:invalid {
+    border-color: red;
 }
